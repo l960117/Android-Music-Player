@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.lws.sy.mv.activity.UserActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/iv_photo"
+        android:scaleType="center"
+        android:background="#dddddd"
+        android:layout_height="200dp"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="30dp"
+        android:layout_alignRight="@id/iv_photo"
+        android:layout_height="60dp"
+        android:id="@+id/user_setting"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/usersetting"/>
+    <com.lws.sy.mv.view.CircleImageView
+        android:layout_width="100dp"
+        android:layout_marginBottom="-50dp"
+        android:src="@mipmap/avatar"
+        android:id="@+id/cv_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/iv_photo"
+        android:layout_height="100dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/cv_avatar"
+        android:id="@+id/tv_title"
+        android:textColor="#205ba5"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_height="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/tv_title"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:id="@+id/tv_desc"
+        android:textColor="#205ba5"
+        android:layout_height="50dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fl_user"
+        android:layout_below="@id/tv_desc"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#e4f1ff"
+                android:id="@+id/rl_all"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/sf_fresh"
+        android:background="#e4f1ff"
+        android:layout_height="match_parent">
+        <com.lws.sy.mv.view.LoadMoreListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_center_list"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/center_add"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignBottom="@id/sf_fresh"
+        android:id="@+id/center_add"/>
+</RelativeLayout>

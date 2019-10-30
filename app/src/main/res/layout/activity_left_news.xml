@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lws.sy.mv.left.NewsActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:paddingLeft="10dp"
+        android:id="@+id/rl_title"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/goback"
+            android:id="@+id/goBack"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/goBack"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textSize="18sp"
+            android:id="@+id/tv_musicTitle"
+            android:textColor="#333333"
+            android:text="消息"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fl_user"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</LinearLayout>
